@@ -1,7 +1,12 @@
-# Imágenes del portafolio
+# Imágenes del sitio
 
-Sube aquí las fotos reales de tus proyectos con estos nombres exactos (reemplazan las que ya existen):
+Sube aquí las fotos reales con estos nombres exactos (reemplazan las que ya existen):
 
+**Fondo del encabezado (hero):**
+- `hero-1.jpg` — foto de la mitad izquierda del fondo (p.ej. antes/obra en proceso)
+- `hero-2.jpg` — foto de la mitad derecha del fondo (p.ej. después/acabado final)
+
+**Portafolio de proyectos:**
 - `proyecto-1.jpg` — Remodelación de cocina
 - `proyecto-2.jpg` — Baño completo
 - `proyecto-3.jpg` — Sala y comedor
