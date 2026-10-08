@@ -253,11 +253,9 @@ img{max-width:100%; display:block;}
   content:"";
   position:absolute; inset:0;
   background-image:url('images/marca-textura.png');
-  background-size:cover; background-position:60% 25%;
-  opacity:.4;
+  background-size:cover; background-position:50% 30%;
+  opacity:.5;
   mix-blend-mode:screen;
-  -webkit-mask-image:radial-gradient(ellipse 60% 65% at 18% 20%, #000 0%, transparent 70%);
-  mask-image:radial-gradient(ellipse 60% 65% at 18% 20%, #000 0%, transparent 70%);
   pointer-events:none;
 }
 .cta-section .container{position:relative; z-index:1;}
