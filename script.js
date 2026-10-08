@@ -6,7 +6,9 @@ menuButton.addEventListener('click', () => {const open=menuButton.getAttribute('
 menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.hidden=true;menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Abrir menú');}));
 document.querySelectorAll('[data-service]').forEach(link=>link.addEventListener('click',()=>{document.querySelector('#service-select').value=link.dataset.service;}));
 const dialog=document.querySelector('#photo-dialog');
-document.querySelector('#open-photo').addEventListener('click',()=>dialog.showModal());
+const dialogImg=dialog.querySelector('img');
+document.querySelector('#open-photo').addEventListener('click',()=>{dialogImg.src='assets/cocina-origen.png';dialog.showModal();});
+document.querySelectorAll('.portfolio-item').forEach(btn=>btn.addEventListener('click',()=>{dialogImg.src=btn.dataset.full;dialog.showModal();}));
 document.querySelector('.close-dialog').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
 const form=document.querySelector('#inquiry-form');
