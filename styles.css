@@ -248,7 +248,19 @@ img{max-width:100%; display:block;}
 .faq-list p{margin-top:10px; color:var(--color-ink-soft); font-size:15px;}
 
 /* ---------- Contact / CTA ---------- */
-.cta-section{background:var(--color-dark); color:#fff;}
+.cta-section{background:var(--color-dark); color:#fff; position:relative; overflow:hidden;}
+.cta-section::before{
+  content:"";
+  position:absolute; inset:0;
+  background-image:url('images/marca-textura.png');
+  background-size:cover; background-position:60% 25%;
+  opacity:.4;
+  mix-blend-mode:screen;
+  -webkit-mask-image:radial-gradient(ellipse 60% 65% at 18% 20%, #000 0%, transparent 70%);
+  mask-image:radial-gradient(ellipse 60% 65% at 18% 20%, #000 0%, transparent 70%);
+  pointer-events:none;
+}
+.cta-section .container{position:relative; z-index:1;}
 .contact-inner{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;}
 .contact-details{list-style:none; padding:0; margin:24px 0 0; display:flex; flex-direction:column; gap:14px; font-size:16px;}
 .contact-label{
