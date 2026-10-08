@@ -59,25 +59,24 @@ img{max-width:100%; display:block;}
   display:flex; align-items:center; justify-content:space-between;
   padding:14px 24px; gap:24px;
 }
-.brand{display:flex; align-items:center; gap:12px; flex-shrink:0;}
-.brand-logo{
-  height:46px; width:auto; max-width:220px; object-fit:contain;
-  mix-blend-mode:multiply;
-}
-.brand-mark{
-  width:40px; height:40px; border:2px solid var(--color-primary);
-  color:var(--color-primary); font-family:var(--font-head); font-weight:700; font-size:18px;
-  display:flex; align-items:center; justify-content:center;
-  flex-shrink:0;
+.brand{display:flex; align-items:center; gap:14px; flex-shrink:0;}
+.brand-hexagon{
+  width:48px; height:48px; flex-shrink:0; color:var(--color-primary);
 }
 .brand-text{
-  font-family:var(--font-head); font-weight:700; letter-spacing:.06em;
-  font-size:15px; line-height:1.3;
+  display:flex; flex-direction:column; gap:3px; line-height:1;
+}
+.brand-word{
+  font-family:var(--font-head); font-weight:700; letter-spacing:.07em;
+  font-size:22px; color:var(--color-ink);
 }
 .brand-text small{
   display:block; font-family:var(--font-body); font-weight:400;
-  letter-spacing:.01em; font-size:11px; color:var(--color-ink-soft);
+  letter-spacing:.03em; font-size:11.5px; color:var(--color-ink-soft);
 }
+.footer-inner .brand-word{color:#fff;}
+.footer-inner .brand-text small{color:#a99b89;}
+.footer-inner .brand-hexagon{color:var(--color-primary-light);}
 .main-nav{display:flex; align-items:center; gap:26px; font-family:var(--font-body); font-weight:500; font-size:15px; flex-wrap:wrap;}
 .main-nav a{color:var(--color-ink); position:relative;}
 .main-nav a:hover{color:var(--color-primary);}
@@ -289,9 +288,6 @@ img{max-width:100%; display:block;}
 /* ---------- Footer ---------- */
 .site-footer{padding:36px 0; border-top:1px solid rgba(255,255,255,0.1); background:var(--color-dark); color:#cfc8bc;}
 .footer-inner{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;}
-.footer-inner .brand-mark{display:inline-flex; margin-right:8px; vertical-align:middle; border-color:var(--color-primary-light); color:var(--color-primary-light);}
-.footer-inner .brand-text{display:inline; vertical-align:middle; color:#fff;}
-.footer-inner .brand-text small{color:#a99b89;}
 .footer-inner p{margin:0; font-size:13.5px;}
 
 /* ---------- Responsive ---------- */
