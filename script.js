@@ -1,5 +1,10 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const siteHeader = document.querySelector('.site-header');
+const toggleHeaderShadow = () => siteHeader.classList.toggle('scrolled', window.scrollY > 8);
+toggleHeaderShadow();
+window.addEventListener('scroll', toggleHeaderShadow, { passive: true });
+
 const navToggle = document.getElementById('nav-toggle');
 const mainNav = document.getElementById('main-nav');
 navToggle.addEventListener('click', () => {
